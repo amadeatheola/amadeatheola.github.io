@@ -12,3 +12,29 @@ main,
 footer {
   width: 100%;
 }
+
+.windowFrame {
+  position: relative;
+
+  /* wrapper stays the same size as the child */
+  width: fit-content;
+  height: fit-content;
+}
+
+.windowFrameOverlay {
+  position: absolute;
+
+  /* Center frame around child */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* 3160 / 2160 */
+  width: 146.296%;
+
+  /* 2560 / 2160 */
+  height: 118.519%;
+
+  z-index: 10;
+  pointer-events: none;
+}
