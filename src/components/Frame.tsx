@@ -11,7 +11,7 @@ export function WindowFrame({ children }: FrameProps) {
       {children}
 
       <img
-        src="public/images/temporal/curtain.png"
+        src="/images/temporal/curtain.png"
         className="windowFrameOverlay"
         alt=""
       />

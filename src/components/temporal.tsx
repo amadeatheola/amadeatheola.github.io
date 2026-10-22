@@ -3,21 +3,21 @@ import React, { useState, useEffect } from 'react';
 // 1. Group your messages cleanly by hour boundaries
 const getTimeofDay = (hour: number): string => {
   if (hour >= 6 && hour < 8) {
-    return "./public/images/temporal/dawn.jpeg";
+    return "/images/temporal/dawn.jpeg";
   } else if (hour >= 8 && hour < 12) {
-    return "./public/images/temporal/morning.jpeg";
+    return "/images/temporal/morning.jpeg";
   } else if (hour >= 12 && hour < 15) {
-    return "./public/images/temporal/noon.jpeg";
+    return "/images/temporal/noon.jpeg";
   } else if (hour >= 15 && hour < 17) {
-    return "./public/images/temporal/afternoon.jpeg";
+    return "/images/temporal/afternoon.jpeg";
   } else if (hour >= 17 && hour < 18) {
-    return "./public/images/temporal/dusk.jpeg";
+    return "/images/temporal/dusk.jpeg";
   } else if (hour >= 18 && hour < 21) {
-    return "./public/images/temporal/evening.jpeg";
+    return "/images/temporal/evening.jpeg";
   } else if (hour >= 21 && hour < 24) {
-    return "./public/images/temporal/night.jpeg";
+    return "/images/temporal/night.jpeg";
   } else {
-    return "./public/images/temporal/midnight.jpeg";
+    return "/images/temporal/midnight.jpeg";
   }
 };
 
@@ -35,10 +35,10 @@ export function HourlyImage() {
 
   return (
     <div style={{ textAlign: 'center', margin: '20px' }}>
-      <img 
-        src={imageSrc} 
-        alt="Time-based theme" 
-        style={{ width: '100%', maxWidth: '400px', borderRadius: '12px', transition: 'all 0.5s ease' }} 
+      <img
+        src={imageSrc}
+        alt="Time-based theme"
+        style={{ width: '100%', maxWidth: '400px', borderRadius: '12px', transition: 'all 0.5s ease' }}
       />
     </div>
   );
