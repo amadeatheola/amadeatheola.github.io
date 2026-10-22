@@ -8,9 +8,25 @@ body {
   box-sizing: border-box;
 }
 
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main,
 footer {
   width: 100%;
+}
+
+.site-main {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+
+.shelf {
+  text-align: center;
 }
 
 .windowFrame {
